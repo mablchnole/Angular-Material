@@ -1,11 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
   <head>
     <meta charset="utf-8">
     <title>Hello Angular Material</title>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+
   </head>
-  <body>
+  <body ng-controller="MainCtrl">
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>Hello Angular Material</h2>
+      </div>
+    </md-toolbar>
 
+    <md-content>
+      <div layout="row" layout-align="center start">
+        <div layout-fill>
+          <md-card>
+            <md-card-title>
+              <md-card-title-text>
+                <span class="md-headline">Hello!</span>
+              </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+              <p>Whatever you do, do not click the button.</p>
+            </md-card-content>
+            <md-card-actions layout="column" layout-align="start">
+              <md-button ng-click="releaseKraken()" class="md-primary md-raised">I dare you.</md-button>
+            </md-card-actions>
+          </md-card>
+        </div>
+      </div>
+    </md-content>
 
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+  <script src="script.js" charset="utf-8"></script>
   </body>
 </html>
